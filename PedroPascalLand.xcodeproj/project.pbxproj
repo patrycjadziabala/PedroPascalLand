@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		46A6D6DA2A2DE55800572121 /* PedroPascalLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6D92A2DE55800572121 /* PedroPascalLandApp.swift */; };
-		46A6D6DC2A2DE55800572121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6DB2A2DE55800572121 /* ContentView.swift */; };
+		46A6D6DC2A2DE55800572121 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6DB2A2DE55800572121 /* EntryView.swift */; };
 		46A6D6DE2A2DE55A00572121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6DD2A2DE55A00572121 /* Assets.xcassets */; };
 		46A6D6E12A2DE55A00572121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6E02A2DE55A00572121 /* Preview Assets.xcassets */; };
+		46A6D6E92A2DF12E00572121 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6E82A2DF12E00572121 /* Constants.swift */; };
+		46A6D6EC2A2DF21400572121 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6EB2A2DF21400572121 /* HeaderView.swift */; };
+		46A6D6F02A2DF3D200572121 /* FuzzyBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */; };
+		46A6D6F12A2DF3D200572121 /* FuzzyBubbles-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6EF2A2DF3D200572121 /* FuzzyBubbles-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46A6D6D62A2DE55800572121 /* PedroPascalLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedroPascalLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A6D6D92A2DE55800572121 /* PedroPascalLandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedroPascalLandApp.swift; sourceTree = "<group>"; };
-		46A6D6DB2A2DE55800572121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46A6D6DB2A2DE55800572121 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		46A6D6DD2A2DE55A00572121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A6D6E02A2DE55A00572121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46A6D6E82A2DF12E00572121 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		46A6D6EB2A2DF21400572121 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Regular.ttf"; sourceTree = "<group>"; };
+		46A6D6EF2A2DF3D200572121 /* FuzzyBubbles-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Bold.ttf"; sourceTree = "<group>"; };
+		46A6D6F22A2DF3EE00572121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		46A6D6D82A2DE55800572121 /* PedroPascalLand */ = {
 			isa = PBXGroup;
 			children = (
+				46A6D6F22A2DF3EE00572121 /* Info.plist */,
+				46A6D6ED2A2DF3C100572121 /* Fonts */,
+				46A6D6E72A2DF12000572121 /* Utilities */,
 				46A6D6D92A2DE55800572121 /* PedroPascalLandApp.swift */,
-				46A6D6DB2A2DE55800572121 /* ContentView.swift */,
+				46A6D6EA2A2DF1AC00572121 /* Views */,
 				46A6D6DD2A2DE55A00572121 /* Assets.xcassets */,
 				46A6D6DF2A2DE55A00572121 /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				46A6D6E02A2DE55A00572121 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46A6D6E72A2DF12000572121 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D6E82A2DF12E00572121 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		46A6D6EA2A2DF1AC00572121 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D6DB2A2DE55800572121 /* EntryView.swift */,
+				46A6D6EB2A2DF21400572121 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46A6D6ED2A2DF3C100572121 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D6EF2A2DF3D200572121 /* FuzzyBubbles-Bold.ttf */,
+				46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +165,8 @@
 			files = (
 				46A6D6E12A2DE55A00572121 /* Preview Assets.xcassets in Resources */,
 				46A6D6DE2A2DE55A00572121 /* Assets.xcassets in Resources */,
+				46A6D6F12A2DF3D200572121 /* FuzzyBubbles-Bold.ttf in Resources */,
+				46A6D6F02A2DF3D200572121 /* FuzzyBubbles-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A6D6DC2A2DE55800572121 /* ContentView.swift in Sources */,
+				46A6D6DC2A2DE55800572121 /* EntryView.swift in Sources */,
 				46A6D6DA2A2DE55800572121 /* PedroPascalLandApp.swift in Sources */,
+				46A6D6E92A2DF12E00572121 /* Constants.swift in Sources */,
+				46A6D6EC2A2DF21400572121 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +312,7 @@
 				DEVELOPMENT_TEAM = 22NX7WBF6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PedroPascalLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +342,7 @@
 				DEVELOPMENT_TEAM = 22NX7WBF6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PedroPascalLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
