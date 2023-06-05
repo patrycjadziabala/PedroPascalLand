@@ -15,6 +15,13 @@
 		46A6D6EC2A2DF21400572121 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6EB2A2DF21400572121 /* HeaderView.swift */; };
 		46A6D6F02A2DF3D200572121 /* FuzzyBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */; };
 		46A6D6F12A2DF3D200572121 /* FuzzyBubbles-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A6D6EF2A2DF3D200572121 /* FuzzyBubbles-Bold.ttf */; };
+		46A6D6F62A2E0A5300572121 /* EnterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6F52A2E0A5300572121 /* EnterButtonView.swift */; };
+		46A6D6F82A2E100900572121 /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6F72A2E100900572121 /* PresentationView.swift */; };
+		46A6D6FA2A2E274B00572121 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6F92A2E274B00572121 /* ImageView.swift */; };
+		46A6D6FC2A2E2AEE00572121 /* PresentationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6FB2A2E2AEE00572121 /* PresentationTableView.swift */; };
+		46A6D6FE2A2E2D6A00572121 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D6FD2A2E2D6A00572121 /* RoundedCornerView.swift */; };
+		46A6D7012A2E3BBA00572121 /* BasicPersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D7002A2E3BBA00572121 /* BasicPersonData.swift */; };
+		46A6D7042A2E3C0D00572121 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 46A6D7032A2E3C0D00572121 /* OrderedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,12 @@
 		46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Regular.ttf"; sourceTree = "<group>"; };
 		46A6D6EF2A2DF3D200572121 /* FuzzyBubbles-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Bold.ttf"; sourceTree = "<group>"; };
 		46A6D6F22A2DF3EE00572121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		46A6D6F52A2E0A5300572121 /* EnterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterButtonView.swift; sourceTree = "<group>"; };
+		46A6D6F72A2E100900572121 /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		46A6D6F92A2E274B00572121 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		46A6D6FB2A2E2AEE00572121 /* PresentationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTableView.swift; sourceTree = "<group>"; };
+		46A6D6FD2A2E2D6A00572121 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		46A6D7002A2E3BBA00572121 /* BasicPersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPersonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A6D7042A2E3C0D00572121 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +74,7 @@
 		46A6D6D82A2DE55800572121 /* PedroPascalLand */ = {
 			isa = PBXGroup;
 			children = (
+				46A6D6FF2A2E3B9A00572121 /* Data */,
 				46A6D6F22A2DF3EE00572121 /* Info.plist */,
 				46A6D6ED2A2DF3C100572121 /* Fonts */,
 				46A6D6E72A2DF12000572121 /* Utilities */,
@@ -92,6 +107,11 @@
 			children = (
 				46A6D6DB2A2DE55800572121 /* EntryView.swift */,
 				46A6D6EB2A2DF21400572121 /* HeaderView.swift */,
+				46A6D6F52A2E0A5300572121 /* EnterButtonView.swift */,
+				46A6D6F72A2E100900572121 /* PresentationView.swift */,
+				46A6D6F92A2E274B00572121 /* ImageView.swift */,
+				46A6D6FB2A2E2AEE00572121 /* PresentationTableView.swift */,
+				46A6D6FD2A2E2D6A00572121 /* RoundedCornerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +123,14 @@
 				46A6D6EE2A2DF3D200572121 /* FuzzyBubbles-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		46A6D6FF2A2E3B9A00572121 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D7002A2E3BBA00572121 /* BasicPersonData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +149,9 @@
 			dependencies = (
 			);
 			name = PedroPascalLand;
+			packageProductDependencies = (
+				46A6D7032A2E3C0D00572121 /* OrderedCollections */,
+			);
 			productName = PedroPascalLand;
 			productReference = 46A6D6D62A2DE55800572121 /* PedroPascalLand.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 46A6D6CD2A2DE55800572121;
+			packageReferences = (
+				46A6D7022A2E3C0D00572121 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 46A6D6D72A2DE55800572121 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,9 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A6D6DC2A2DE55800572121 /* EntryView.swift in Sources */,
+				46A6D7012A2E3BBA00572121 /* BasicPersonData.swift in Sources */,
 				46A6D6DA2A2DE55800572121 /* PedroPascalLandApp.swift in Sources */,
+				46A6D6F82A2E100900572121 /* PresentationView.swift in Sources */,
 				46A6D6E92A2DF12E00572121 /* Constants.swift in Sources */,
 				46A6D6EC2A2DF21400572121 /* HeaderView.swift in Sources */,
+				46A6D6FE2A2E2D6A00572121 /* RoundedCornerView.swift in Sources */,
+				46A6D6FC2A2E2AEE00572121 /* PresentationTableView.swift in Sources */,
+				46A6D6FA2A2E274B00572121 /* ImageView.swift in Sources */,
+				46A6D6F62A2E0A5300572121 /* EnterButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46A6D7022A2E3C0D00572121 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46A6D7032A2E3C0D00572121 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A6D7022A2E3C0D00572121 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46A6D6CE2A2DE55800572121 /* Project object */;
 }

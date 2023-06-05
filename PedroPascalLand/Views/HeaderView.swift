@@ -10,7 +10,6 @@ import SwiftUI
 struct HeaderView: View {
     
     var body: some View {
-       
             ZStack (alignment: .leading) {
                 Rectangle()
                     .frame(width: 350, height: 100)
