@@ -22,7 +22,9 @@ struct PresentationView: View {
                         .frame(width: 400)
                     Spacer()
                     TitleView(title: Constants.movies, color: .white)
-                    
+                 MoviesCardView()
+                        .frame(width: 380, height: 550)
+                        .padding()
                 }
             }
         }
