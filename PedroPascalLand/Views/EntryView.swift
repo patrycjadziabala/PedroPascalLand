@@ -53,7 +53,7 @@ struct EntryView: View {
                 showHeadline = false
             }
         } else {
-            PresentationView()
+            PedroPascalLandTabView()
         }
     }
 }

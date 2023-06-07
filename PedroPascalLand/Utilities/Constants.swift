@@ -31,6 +31,8 @@ struct Constants {
     static let developerInfo = "Developer Info"
     static let websites = "Websites"
     static let stopFloatingHeads = "Stop Floating Heads"
+    static let home = "Home"
+    static let information = "Developer Info"
     
     //MARK: - Images
     
@@ -40,4 +42,10 @@ struct Constants {
     static let pedro10 = "pedro10"
     static let logo = "Paradise Pink Funky Pancake Logo"
     static let pedroFloatingHead = "pedroFloatingHead"
+    static let house = "house"
+    static let info = "info"
+    static let iconTheLastOfUs = "iconTheLastOfUs"
+    static let iconTheUnbearableOriginal = "iconTheUnbearableOriginal"
+    static let iconYoda = "iconYoda"
+    static let iconNarcos = "iconNarcos"
 }

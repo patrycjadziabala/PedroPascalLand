@@ -8,11 +8,14 @@
 import Foundation
 
 struct Movie: Identifiable {
-  var id = UUID()
-  var title: String
-  var year: String
-  var image: String
-  var rating: Int
-  var genre: String
-  var role: String
+    var id = UUID()
+    var title: String
+    var year: String
+    var image: String
+    var rating: Int
+    var genre: String
+    var role: String
+    var icon: String
+    var actor: String
+    var plot: String
 }

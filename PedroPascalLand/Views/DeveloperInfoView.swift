@@ -40,7 +40,6 @@ struct DeveloperInfoView: View {
                             if linksData.isLink {
                                 Link(destination: URL(string: linksData.description)!) {
                                     Text(linksData.description)
-                                    
                                 }
                             } else {
                                 Text(linksData.description)

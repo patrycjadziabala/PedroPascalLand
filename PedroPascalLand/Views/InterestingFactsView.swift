@@ -16,7 +16,6 @@ struct InterestingFactsView: View {
                     Group {
                         Text(fact)
                             .font(.system(size: 20))
-                            .foregroundColor(.white)
                             .shadow(radius: 8)
                             .multilineTextAlignment(.center)
                     } //group
