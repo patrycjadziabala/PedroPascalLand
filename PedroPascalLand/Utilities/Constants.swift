@@ -8,15 +8,31 @@
 import Foundation
 
 struct Constants {
-    static let entryViewHeaderText = "Everything you need to know about..."
-    static let nameText = "Pedro Pascal"
-    static let enjoy = "Enjoy!"
+    
+    //MARK: - Colors
+    
+    static let customLightPink = "customLightPink"
+    
+    //MARK: - Fonts
     static let customFontBubblesBold = "FuzzyBubbles-Bold"
     static let customFontBubblesRegular = "FuzzyBubbles-Regular"
-    static let PresentationViewBackground = "PresentationViewBackground"
+    
+    //MARK: - Titles
+    
+    static let entryViewHeaderText = "Everything you need to know about..."
+    static let interestingFacts = "Interesting facts"
+    static let nameText = "Pedro Pascal"
+    static let enjoy = "Enjoy!"
+    static let movies = "Movies"
+    static let narcos = "Narcos"
+    static let theLastOfUs = "The Last Of Us"
+    static let theMandalorian = "The Mandalorian"
+    static let theUnbearableWeightOfMassiveTalent = "The Unbearable Weight Of Massive Talent"
     
     //MARK: - Images
     
+    static let presentationViewBackground = "PresentationViewBackground"
+    static let movieDetailsBackgroundColor = "Movie details background"
     static let pedro6 = "pedro6"
     static let pedro10 = "pedro10"
     static let logo = "Paradise Pink Funky Pancake Logo"

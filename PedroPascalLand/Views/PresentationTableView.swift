@@ -14,7 +14,8 @@ struct PresentationTableView: View {
                     ForEach(Array(basicPersonData.keys), id: \.self, content: { key in
                         VStack (alignment: .trailing) {
                             Text(key)
-                                .font(Font.custom(Constants.customFontBubblesRegular, size: 20))
+                                .font(Font.custom(Constants.customFontBubblesBold, size: 20))
+                                
                             Divider()
                         } //vstack
                         
@@ -49,7 +50,14 @@ struct PresentationTableView: View {
             } //hstack
             .padding()
             .frame(height: 350)
-        
+            .background(Image(Constants.presentationViewBackground)
+                .resizable()
+                .edgesIgnoringSafeArea(.bottom)
+                .frame(height: 350)
+                .cornerRadius(80, corners: [.topLeft, .topRight])
+                .scaledToFit()
+                .frame(width: 400)
+                .padding())
     }
 }
 struct PresentationTableView_Previews: PreviewProvider {

@@ -10,29 +10,27 @@ import SwiftUI
 struct PresentationView: View {
     var body: some View {
         ZStack (alignment: .top){
+            Color(Constants.customLightPink)
             ImageView(height: 550)
-            VStack {
-                Spacer()
-                Spacer()
-                ZStack {
-                    Image(Constants.PresentationViewBackground)
-                        .resizable()
-                        .edgesIgnoringSafeArea(.bottom)
+            ScrollView {
+                VStack (spacing: 0) {
+                    Spacer()
                         .frame(height: 350)
-                        .cornerRadius(80, corners: [.topLeft, .topRight])
-                        .scaledToFit()
-                        .frame(width: 400)
-                        .padding()
                     PresentationTableView()
                         .padding()
+                    InterestingFactsView()
+                        .frame(width: 400)
+                    Spacer()
+                    TitleView(title: Constants.movies, color: .white)
+                    
                 }
             }
         }
     }
-}
-
-struct PresentationView_Previews: PreviewProvider {
-    static var previews: some View {
-        PresentationView()
+    
+    struct PresentationView_Previews: PreviewProvider {
+        static var previews: some View {
+            PresentationView()
+        }
     }
 }
