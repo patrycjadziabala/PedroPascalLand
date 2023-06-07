@@ -11,8 +11,8 @@ struct EntryView: View {
     @State private var showEntry: Bool = true
     var slideInAnimation: Animation {
         Animation.spring(response: 1.5, dampingFraction: 0.5, blendDuration: 0.5)
-            .speed(1)
-            .delay(0.25)
+            .speed(4)
+//            .delay(0.25)
     }
     @State private var showHeadline: Bool = false
     var body: some View {
