@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct DeveloperInfoView: View {
+    @State private var isAnimating: Bool = true
     var body: some View {
         ZStack {
             Image(Constants.movieDetailsBackgroundColor)
                 .resizable()
                 .edgesIgnoringSafeArea(.top)
                 .opacity(0.6)
+            if isAnimating {
+                AnimationView()
+            }
             VStack {
                 TitleView(title: Constants.developerInfo , color: .black)
                     .shadow(radius: 6)
@@ -23,40 +27,58 @@ struct DeveloperInfoView: View {
                         HStack {
                             Text(developerInfo.name)
                             Spacer()
-                            if developerInfo.isLink {
-                                Link(destination: URL(string: developerInfo.description)!) {
-                                    Text(developerInfo.description)
-                                        .font(.custom(Constants.customFontBubblesBold, size: 25))
-                                }
-                            } else {
-                                Text(developerInfo.description)
-                                    .font(.custom(Constants.customFontBubblesBold, size: 25))
-                            }
+                            Text(developerInfo.description)
+                                .font(.custom(Constants.customFontBubblesBold, size: 22))
+                                .shadow(radius: 6)
                         }
                         Divider()
                     }
+                    
                     VStack {
                         ForEach(linksData, id: \.id) { linksData in
-                        Spacer()
+                            Spacer()
                             if linksData.isLink {
                                 Link(destination: URL(string: linksData.description)!) {
                                     Text(linksData.description)
+                                    
                                 }
                             } else {
                                 Text(linksData.description)
                             }
-                           
                         }
                     }
                     .multilineTextAlignment(.center)
+                    .font(.custom(Constants.customFontBubblesBold, size: 22))
+                    .foregroundColor(.black)
+                    .shadow(radius: 6)
+                    Button {
+                        isAnimating.toggle()
+                    } label: {
+                        Text(Constants.stopFloatingHeads)
+                            .font(.custom(Constants.customFontBubblesBold, size: 15))
+                            .shadow(radius: 6)
+                            .background(
+                                Capsule()
+                                    .strokeBorder(lineWidth: 4)
+                                    .shadow(radius: 6)
+                                    .padding([.top, .bottom], -7)
+                                    .padding([.leading, .trailing], -15)
+                            )
+                    } //button
+                    .offset(y: 30)
+                    .foregroundColor(.black)
+                    .padding()
+                    Spacer()
+                    Spacer()
                     Spacer()
                 } //vstack
-                .offset(y: 40)
+                .offset(y: 50)
                 .font(.custom(Constants.customFontBubblesRegular, size: 20))
                 .padding()
                 Spacer()
-            }
-        }
+            } //vstack
+            .offset(y: 45)
+        } //zstack
     }
 }
 

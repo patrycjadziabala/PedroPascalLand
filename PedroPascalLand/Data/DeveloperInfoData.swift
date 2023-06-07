@@ -8,7 +8,7 @@
 import Foundation
 
 let developerInfo = [
-    DeveloperInfoModel(name: "Application Name", description: "PedroPascalLand", isLink: false),
+    DeveloperInfoModel(name: "Application", description: "PedroPascalLand", isLink: false),
     DeveloperInfoModel(name: "Developer", description: "Patrycja", isLink: false),
     DeveloperInfoModel(name: "Designer", description: "Patrycja", isLink: false),
 ]
