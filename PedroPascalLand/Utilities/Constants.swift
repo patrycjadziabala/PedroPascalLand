@@ -48,4 +48,6 @@ struct Constants {
     static let iconTheUnbearableOriginal = "iconTheUnbearableOriginal"
     static let iconYoda = "iconYoda"
     static let iconNarcos = "iconNarcos"
+    static let iconTheBubble = "iconTheBubble"
+    static let theBubblePoster = "theBubblePoster"
 }

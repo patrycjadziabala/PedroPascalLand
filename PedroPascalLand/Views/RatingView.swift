@@ -13,7 +13,7 @@ struct RatingView: View {
         HStack {
             ForEach(1...movie.rating, id: \.self) { _ in
                 Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.pink)
                     .shadow(radius: 10)
             }
         } //hstack

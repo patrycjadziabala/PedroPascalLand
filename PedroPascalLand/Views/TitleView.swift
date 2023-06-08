@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct TitleView: View {
     var title: String
     var color: Color

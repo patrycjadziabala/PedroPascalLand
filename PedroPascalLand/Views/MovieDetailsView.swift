@@ -20,27 +20,28 @@ struct MovieDetailsView: View {
                         .resizable()
                         .scaledToFit()
                         .shadow(radius: 30)
+                        .cornerRadius(50, corners: [.topLeft, .topRight])
                     Text("\(movie.title)")
                         .font(.custom(Constants.customFontBubblesBold, size: 30))
                         .multilineTextAlignment(.center)
                         .shadow(radius: 13)
-                
+                    RatingView(movie: movie)
                     HStack {
-                        VStack {
+                        VStack (alignment: .leading) {
                             Text(movie.year)
                             Text(movie.genre)
                                 .offset(y: 8)
                         }
-                        .padding()
+                        .offset(x: 8)
                         Image(movie.icon)
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(90, corners: .allCorners)
                         VStack (alignment: .center) {
-                            RatingView(movie: movie)
                             Spacer()
                             Spacer()
                             Text("IbDb rating: \(movie.rating*2)")
+                                .multilineTextAlignment(.center)
                         }
                         .padding()
                     }
@@ -52,8 +53,18 @@ struct MovieDetailsView: View {
                         Text(movie.role)
                         }
                     .font(.custom(Constants.customFontBubblesRegular, size: 20))
+                    ZStack {
+                        Image(Constants.movieDetailsBackgroundColor)
+                            .resizable()
+                            .frame(height: 500)
+                            .opacity(0.9)
+                            .cornerRadius(60, corners: .allCorners)
+                        Text(movie.plot)
+                            .multilineTextAlignment(.center)
+                        .font(.custom(Constants.customFontBubblesRegular, size: 15))
                     }
-                } // vstack
+                    } //vstack
+                }
             }
         }
     }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EnterButtonView: View {
     @Binding var showEntry: Bool
-    
     var body: some View {
         Button {
             showEntry.toggle()
