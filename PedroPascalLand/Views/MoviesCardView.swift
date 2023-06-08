@@ -40,9 +40,16 @@ struct MoviesCardView: View {
                                 .shadow(radius: 5)
                             } //vstack
                         } //vstack
+                        
                     }
                     .frame(height: 430)
                     .cornerRadius(30, corners: .allCorners)
+                    .onTapGesture {
+                    showDetails = true
+                    }
+                    .sheet(isPresented: $showDetails) {
+                        MovieDetailsView(movie: movie)
+                    }
                 }
             }
         }
