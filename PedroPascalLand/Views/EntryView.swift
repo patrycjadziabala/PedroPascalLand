@@ -31,7 +31,7 @@ struct EntryView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .ignoresSafeArea()
-                                .frame(height: 767)
+//                                .frame(height: 767)
                         }
                     } //vstack
                 } //geomerty
