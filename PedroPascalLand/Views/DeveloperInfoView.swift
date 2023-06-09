@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DeveloperInfoView: View {
     @State private var isAnimating: Bool = true
+
     var body: some View {
         ZStack {
             Image(Constants.movieDetailsBackgroundColor)

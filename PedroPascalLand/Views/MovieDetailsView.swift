@@ -21,7 +21,7 @@ struct MovieDetailsView: View {
                         .scaledToFit()
                         .shadow(radius: 30)
                         .cornerRadius(50, corners: [.topLeft, .topRight])
-                    Text("\(movie.title)")
+                    Text(movie.title)
                         .font(.custom(Constants.customFontBubblesBold, size: 30))
                         .multilineTextAlignment(.center)
                         .shadow(radius: 13)

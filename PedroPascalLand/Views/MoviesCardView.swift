@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MoviesCardView: View {
-    @State private var showDetails: Bool = false
+    @State private var moviePresented: Movie?
+    
     var body: some View {
         TabView {
             ForEach(movieData, id: \.id) { movie in
-                Group {
                     ZStack {
                         Image(Constants.movieDetailsBackgroundColor)
                             .resizable()
@@ -40,17 +40,15 @@ struct MoviesCardView: View {
                                 .shadow(radius: 5)
                             } //vstack
                         } //vstack
-                        
-                    }
+                    } // zstack
                     .frame(height: 430)
                     .cornerRadius(30, corners: .allCorners)
                     .onTapGesture {
-                    showDetails = true
+                    moviePresented = movie
                     }
-                    .sheet(isPresented: $showDetails) {
-                        MovieDetailsView(movie: movie)
-                    }
-                }
+            } // foreach
+            .sheet(item: $moviePresented) { movie in
+                MovieDetailsView(movie: movie)
             }
         }
         .tabViewStyle(.page)
