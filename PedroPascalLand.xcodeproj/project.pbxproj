@@ -35,6 +35,7 @@
 		46A6D7222A30F4E300572121 /* DeveloperInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D7212A30F4E300572121 /* DeveloperInfoModel.swift */; };
 		46A6D7242A31097500572121 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D7232A31097500572121 /* AnimationView.swift */; };
 		46A6D72A2A31186100572121 /* PedroPascalLandTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D7292A31186000572121 /* PedroPascalLandTabView.swift */; };
+		46A6D72C2A33253300572121 /* ExternalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D72B2A33253300572121 /* ExternalWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		46A6D7212A30F4E300572121 /* DeveloperInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoModel.swift; sourceTree = "<group>"; };
 		46A6D7232A31097500572121 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		46A6D7292A31186000572121 /* PedroPascalLandTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedroPascalLandTabView.swift; sourceTree = "<group>"; };
+		46A6D72B2A33253300572121 /* ExternalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				46A6D71D2A30DE5E00572121 /* DeveloperInfoView.swift */,
 				46A6D7232A31097500572121 /* AnimationView.swift */,
 				46A6D7292A31186000572121 /* PedroPascalLandTabView.swift */,
+				46A6D72B2A33253300572121 /* ExternalWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				46A6D70F2A2E7C0C00572121 /* MovieModel.swift in Sources */,
 				46A6D6F62A2E0A5300572121 /* EnterButtonView.swift in Sources */,
 				46A6D7242A31097500572121 /* AnimationView.swift in Sources */,
+				46A6D72C2A33253300572121 /* ExternalWebView.swift in Sources */,
 				46A6D7082A2E54DC00572121 /* TitleView.swift in Sources */,
 				46A6D72A2A31186100572121 /* PedroPascalLandTabView.swift in Sources */,
 				46A6D7202A30E1CA00572121 /* DeveloperInfoData.swift in Sources */,

@@ -20,14 +20,13 @@ struct PresentationView: View {
                         .padding()
                     InterestingFactsView()
                         .frame(width: 400)
-                    Spacer()
-                    TitleView(title: Constants.movies, color: .white)
                  MoviesCardView()
                         .frame(width: 380, height: 550)
                         .padding()
-                }
-            }
-        }
+                    ExternalWebView()
+                } //vstack
+            } //scroll view
+        } //zstack
     }
     
     struct PresentationView_Previews: PreviewProvider {

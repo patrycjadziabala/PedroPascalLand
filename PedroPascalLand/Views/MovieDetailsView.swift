@@ -26,7 +26,7 @@ struct MovieDetailsView: View {
                         .multilineTextAlignment(.center)
                         .shadow(radius: 13)
                     RatingView(movie: movie)
-                    HStack {
+                    HStack (alignment: .center) {
                         VStack (alignment: .leading) {
                             Text(movie.year)
                             Text(movie.genre)
@@ -37,14 +37,18 @@ struct MovieDetailsView: View {
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(90, corners: .allCorners)
+                            .offset(x: 15)
+                         
                         VStack (alignment: .center) {
-                            Spacer()
                             Spacer()
                             Text("IbDb rating: \(movie.rating*2)")
                                 .multilineTextAlignment(.center)
+                                .offset(x: 8)
+                            Spacer()
                         }
                         .padding()
                     }
+                    .padding()
                     .font(.custom(Constants.customFontBubblesRegular, size: 21))
                     HStack {
                         Text(movie.actor)
@@ -72,6 +76,6 @@ struct MovieDetailsView: View {
 
 struct MovieDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsView(movie: movieData[3])
+        MovieDetailsView(movie: movieData[4])
     }
 }

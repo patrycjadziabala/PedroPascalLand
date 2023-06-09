@@ -53,11 +53,13 @@ struct PresentationTableView: View {
             .background(Image(Constants.presentationViewBackground)
                 .resizable()
                 .edgesIgnoringSafeArea(.bottom)
+                .opacity(0.7)
                 .frame(height: 350)
                 .cornerRadius(80, corners: [.topLeft, .topRight])
                 .scaledToFit()
                 .frame(width: 400)
                 .padding())
+            
     }
 }
 struct PresentationTableView_Previews: PreviewProvider {
